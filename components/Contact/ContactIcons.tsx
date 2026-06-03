@@ -1,11 +1,12 @@
 import data from "@/data/contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactIcons = () => (
   <ul className="icons">
     {data.map((s) => (
       <li key={s.label}>
         <a href={s.link}>
-          <s.icon />
+          <FontAwesomeIcon icon={s.icon} />
         </a>
       </li>
     ))}

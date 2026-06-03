@@ -1,26 +1,28 @@
-import { Icon, IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
+import { faLinkedinIn, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export interface ContactItem {
   link: string;
   label: string;
-  icon: Icon;
+  icon: IconDefinition;
 }
 
 const data: ContactItem[] = [
   {
     link: 'https://github.com/anthonybuncio',
     label: 'Github',
-    icon: IconBrandGithub,
+    icon: faGithub,
   },
   {
     link: 'https://linkedin.com/in/anthonybuncio1/',
     label: 'LinkedIn',
-    icon: IconBrandLinkedin,
+    icon: faLinkedinIn,
   },
   {
     link: 'mailto:anthonybuncio.work@gmail.com',
     label: 'Email',
-    icon: IconMail,
+    icon: faEnvelope,
   },
 ];
 
